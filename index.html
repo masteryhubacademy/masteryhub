@@ -2,525 +2,262 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>MasteryHub | Learn More. Become More.</title>
-<meta name="description" content="MasteryHub offers online educational programs with PDF and video learning formats for learners worldwide.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MasteryHub | Premium Online Learning</title>
+<meta name="description" content="MasteryHub - Professional online learning programs for students and ambitious learners worldwide.">
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{
-font-family:Arial,Helvetica,sans-serif;
-background:#07111f;
-color:#eef5ff;
-line-height:1.6
-}
+body{font-family:Arial,sans-serif;background:#060b16;color:#f5f7fb;line-height:1.6}
 a{text-decoration:none;color:inherit}
-.container{width:min(1120px,92%);margin:auto}
+.wrap{width:min(1100px,92%);margin:auto}
 
-nav{
-position:sticky;top:0;z-index:99;
-background:rgba(7,17,31,.95);
-border-bottom:1px solid #1d3048;
-backdrop-filter:blur(12px)
-}
-.nav{
-min-height:68px;display:flex;align-items:center;
-justify-content:space-between;gap:20px
-}
-.logo{font-size:24px;font-weight:800}
-.logo span{color:#35d9ff}
-.navlinks{display:flex;gap:20px;font-size:14px}
-.navlinks a:hover{color:#35d9ff}
+header{position:sticky;top:0;z-index:50;background:#060b16ee;border-bottom:1px solid #172238}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:800}.logo i{color:#29d9ff;font-style:normal}
+nav a{margin-left:22px;color:#aebbd0;font-size:14px}
+nav a:hover{color:#29d9ff}
 
-.hero{
-padding:85px 0 70px;
-text-align:center;
-background:radial-gradient(circle at 50% 0,#173a59 0,#07111f 48%)
-}
-.badge{
-display:inline-block;padding:8px 14px;border:1px solid #284968;
-border-radius:30px;color:#63ddff;font-size:13px;margin-bottom:20px
-}
-h1{font-size:clamp(42px,8vw,76px);line-height:1.05}
-.hero h1 span{color:#35d9ff}
-.hero p{
-max-width:720px;margin:22px auto;color:#aebed0;font-size:18px
-}
-.btn{
-display:inline-block;padding:13px 22px;border-radius:10px;
-font-weight:700;border:1px solid #35d9ff;
-background:#35d9ff;color:#03101b;cursor:pointer
-}
-.btn.secondary{background:transparent;color:#fff;border-color:#38536e}
-.btn:hover{transform:translateY(-2px)}
+.hero{padding:90px 0 70px;text-align:center;background:radial-gradient(circle at 50% 0,#14385a,transparent 55%)}
+.pill{display:inline-block;padding:7px 14px;border:1px solid #27506d;border-radius:30px;color:#5ee2ff;font-size:13px;margin-bottom:20px}
+h1{font-size:clamp(42px,8vw,72px);line-height:1.05}
+h1 span{color:#29d9ff}
+.hero p{max-width:700px;margin:22px auto;color:#a9b7ca;font-size:18px}
+.btn{display:inline-block;border:0;border-radius:9px;padding:13px 21px;background:#29d9ff;color:#03101a;font-weight:800;cursor:pointer}
+.btn.alt{background:transparent;border:1px solid #31465f;color:white;margin-left:8px}
+.btn:hover{opacity:.88}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:45px}
+.stat{background:#0c1422;border:1px solid #1b2b40;border-radius:13px;padding:18px}
+.stat strong{display:block;font-size:24px;color:#5ee2ff}.stat small{color:#8798ad}
 
-.stats{
-display:grid;grid-template-columns:repeat(4,1fr);
-gap:14px;margin-top:45px
-}
-.stat{
-padding:22px;border:1px solid #1e354d;
-background:#0b1929;border-radius:14px
-}
-.stat b{display:block;font-size:25px;color:#63ddff}
-.stat small{color:#91a4b8}
+section{padding:70px 0}.title{text-align:center;margin-bottom:32px}
+.title h2{font-size:35px}.title p{color:#899aaf;margin-top:6px}
 
-section{padding:75px 0}
-.section-title{text-align:center;margin-bottom:35px}
-.section-title h2{font-size:36px}
-.section-title p{color:#91a4b8;margin-top:8px}
+.search{width:100%;padding:14px;border-radius:10px;background:#0c1422;color:white;border:1px solid #263950;margin-bottom:22px;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:#0c1422;border:1px solid #1c3047;border-radius:16px;padding:24px}
+.card:hover{border-color:#29d9ff}
+.num{font-size:12px;color:#29d9ff;font-weight:bold}
+.card h3{font-size:22px;margin:7px 0}
+.card p{color:#91a2b6;min-height:70px}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin:15px 0}
+.tag{background:#132338;color:#a9c0d8;padding:4px 8px;border-radius:6px;font-size:11px}
+.price{font-size:27px;font-weight:800;margin-bottom:15px}
+.buy{width:100%}
 
-.search{
-width:100%;padding:15px 18px;border-radius:12px;
-border:1px solid #29445f;background:#0b1929;color:white;
-font-size:16px;margin-bottom:25px;outline:none
-}
+.features,.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.box{background:#0c1422;border:1px solid #1c3047;border-radius:15px;padding:23px}
+.box h3{margin-bottom:7px}.box p{color:#91a2b6}
 
-.grid{
-display:grid;grid-template-columns:repeat(2,1fr);gap:20px
-}
-.card{
-background:#0b1929;border:1px solid #203a54;
-border-radius:18px;padding:25px;
-transition:.2s
-}
-.card:hover{border-color:#35d9ff;transform:translateY(-3px)}
-.number{color:#35d9ff;font-weight:bold;font-size:13px}
-.card h3{font-size:23px;margin:8px 0}
-.card p{color:#9fb0c2;min-height:65px}
-.tags{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
-.tag{
-padding:5px 9px;background:#12263b;
-border-radius:7px;color:#b9d2e8;font-size:12px
-}
-.price{
-font-size:27px;font-weight:800;margin:12px 0 18px
-}
-.order{width:100%;text-align:center}
+.faq{max-width:780px;margin:auto}
+details{background:#0c1422;border:1px solid #1c3047;border-radius:10px;padding:16px;margin:9px 0}
+summary{font-weight:bold;cursor:pointer}
+details p{color:#91a2b6;margin-top:10px}
 
-.features{
-display:grid;grid-template-columns:repeat(3,1fr);gap:18px
-}
-.feature{
-background:#0b1929;border:1px solid #203a54;
-border-radius:16px;padding:25px
-}
-.feature h3{margin-bottom:8px}
-.feature p{color:#9fb0c2}
+.cta{text-align:center;background:linear-gradient(135deg,#0d2034,#0a1423);border:1px solid #21405a;border-radius:20px;padding:50px 20px}
+.cta p{color:#91a2b6;margin:10px auto 22px;max-width:600px}
 
-.steps{
-display:grid;grid-template-columns:repeat(3,1fr);gap:18px
-}
-.step{
-padding:25px;background:#0b1929;border-radius:16px;
-border:1px solid #203a54
-}
-.step b{
-display:inline-grid;place-items:center;width:38px;height:38px;
-border-radius:50%;background:#35d9ff;color:#03101b;margin-bottom:12px
-}
+footer{border-top:1px solid #172238;text-align:center;padding:30px;color:#71839a}
+footer b{color:#29d9ff}
 
-.faq{max-width:800px;margin:auto}
-details{
-background:#0b1929;border:1px solid #203a54;
-border-radius:12px;margin-bottom:10px;padding:17px
-}
-summary{cursor:pointer;font-weight:bold}
-details p{color:#9fb0c2;margin-top:12px}
+.modal{display:none;position:fixed;inset:0;background:#000b;z-index:100;align-items:center;justify-content:center;padding:20px}
+.modalbox{background:#0d1726;border:1px solid #29445d;border-radius:16px;padding:25px;width:min(480px,100%)}
+.close{float:right;font-size:25px;cursor:pointer;color:#9aaabd}
+.modalbox p{color:#9aabba;margin:8px 0 18px}
+input,select,textarea{width:100%;padding:12px;margin:6px 0 10px;background:#07101d;color:white;border:1px solid #294057;border-radius:8px}
+textarea{height:80px}.send{width:100%}
 
-.cta{
-text-align:center;background:#0b1929;
-border:1px solid #203a54;border-radius:22px;padding:50px
-}
-.cta p{color:#a7b7c8;margin:12px auto 25px;max-width:650px}
-
-footer{
-border-top:1px solid #1d3048;padding:35px 0;
-text-align:center;color:#8497aa
-}
-footer a{color:#63ddff}
-
-.modal{
-display:none;position:fixed;inset:0;z-index:200;
-background:rgba(0,0,0,.75);padding:20px;
-align-items:center;justify-content:center
-}
-.modal-box{
-width:min(500px,100%);background:#0b1929;
-border:1px solid #2a4762;border-radius:18px;padding:28px
-}
-.close{
-float:right;font-size:25px;cursor:pointer;color:#aabacc
-}
-.modal-box h2{margin-bottom:8px}
-.modal-box p{color:#9fb0c2;margin-bottom:18px}
-input,textarea,select{
-width:100%;padding:13px;margin:7px 0 12px;
-background:#07111f;border:1px solid #29445f;
-border-radius:9px;color:white;font-size:15px
-}
-textarea{min-height:90px;resize:vertical}
-
-.notice{
-font-size:12px;color:#8297aa;margin-top:15px
-}
-
-@media(max-width:800px){
-.navlinks{display:none}
+@media(max-width:750px){
+nav div a{display:none}
 .stats{grid-template-columns:repeat(2,1fr)}
 .grid,.features,.steps{grid-template-columns:1fr}
-.hero{padding-top:60px}
-section{padding:55px 0}
+.hero{padding-top:65px}
+.btn{margin:4px 2px}.btn.alt{margin-left:2px}
 }
 </style>
 </head>
 
 <body>
 
+<header>
+<div class="wrap nav">
+<a class="logo" href="#home">Mastery<i>Hub</i></a>
 <nav>
-<div class="container nav">
-<a href="#top" class="logo">Mastery<span>Hub</span></a>
-<div class="navlinks">
 <a href="#courses">Courses</a>
 <a href="#why">Why Us</a>
 <a href="#how">How It Works</a>
 <a href="#faq">FAQ</a>
 <a href="#contact">Contact</a>
-</div>
-</div>
 </nav>
+</div>
+</header>
 
-<main id="top">
-
-<section class="hero">
-<div class="container">
-<div class="badge">🌍 Worldwide Online Learning</div>
-
+<section class="hero" id="home">
+<div class="wrap">
+<div class="pill">🌍 WORLDWIDE ONLINE LEARNING</div>
 <h1>Learn More.<br><span>Become More.</span></h1>
-
-<p>
-Explore professional educational programs designed to help you
-build knowledge, practical skills and a stronger future — all from one place.
-</p>
-
-<a href="#courses" class="btn">Explore Courses →</a>
-<a href="#how" class="btn secondary">How It Works</a>
+<p>Professional educational programs designed to help you build knowledge, practical skills and a stronger future from anywhere in the world.</p>
+<a class="btn" href="#courses">Explore Programs →</a>
+<a class="btn alt" href="#how">How It Works</a>
 
 <div class="stats">
-<div class="stat"><b>10+</b><small>Learning Programs</small></div>
-<div class="stat"><b>PDF</b><small>Detailed Study Material</small></div>
-<div class="stat"><b>Video</b><small>Learning Format</small></div>
-<div class="stat"><b>🌍</b><small>Worldwide Access</small></div>
+<div class="stat"><strong>10+</strong><small>Programs</small></div>
+<div class="stat"><strong>PDF</strong><small>Study Material</small></div>
+<div class="stat"><strong>Video</strong><small>Learning Format</small></div>
+<div class="stat"><strong>🌍</strong><small>Worldwide</small></div>
 </div>
 </div>
 </section>
 
 <section id="courses">
-<div class="container">
-<div class="section-title">
-<h2>Our Programs</h2>
-<p>Choose your learning path and start building valuable knowledge.</p>
-</div>
+<div class="wrap">
+<div class="title"><h2>Featured Programs</h2><p>Choose your path and start learning.</p></div>
 
-<input id="search" class="search" type="search"
-placeholder="🔎 Search courses...">
+<input class="search" id="search" placeholder="🔎 Search a course...">
 
-<div class="grid" id="courseGrid">
+<div class="grid">
 
-<div class="card">
-<div class="number">01 • MEDICAL SCIENCES</div>
-<h3>Medicine & Medical Sciences</h3>
-<p>Foundation-level study of anatomy, physiology, pathology, pharmacology, diagnostics and clinical reasoning.</p>
-<div class="tags"><span class="tag">PDF</span><span class="tag">Video</span><span class="tag">Foundation</span></div>
-<div class="price">$49</div>
-<button class="btn order" onclick="openOrder('Medicine & Medical Sciences','$49')">Order Now</button>
-</div>
+<div class="card"><div class="num">01 • MEDICINE</div><h3>Medicine & Medical Sciences</h3><p>Foundation-level study of anatomy, physiology, pathology, pharmacology and clinical reasoning.</p><div class="tags"><span class="tag">PDF</span><span class="tag">VIDEO</span><span class="tag">FOUNDATION</span></div><div class="price">$49</div><button class="btn buy" onclick="order('Medicine & Medical Sciences','$49')">Order Now</button></div>
 
-<div class="card">
-<div class="number">02 • TECHNOLOGY</div>
-<h3>AI & Automation</h3>
-<p>Learn AI concepts, automation workflows, productivity systems and practical digital tools.</p>
-<div class="tags"><span class="tag">PDF</span><span class="tag">Video</span><span class="tag">AI</span></div>
-<div class="price">$49</div>
-<button class="btn order" onclick="openOrder('AI & Automation','$49')">Order Now</button>
-</div>
+<div class="card"><div class="num">02 • TECHNOLOGY</div><h3>AI & Automation</h3><p>Learn AI concepts, automation workflows, productivity systems and practical digital tools.</p><div class="tags"><span class="tag">PDF</span><span class="tag">VIDEO</span><span class="tag">AI</span></div><div class="price">$49</div><button class="btn buy" onclick="order('AI & Automation','$49')">Order Now</button></div>
 
-<div class="card">
-<div class="number">03 • DIGITAL CAREER</div>
-<h3>Digital Marketing</h3>
-<p>Build practical knowledge in social media, content marketing, SEO, branding, funnels and online growth.</p>
-<div class="tags"><span class="tag">PDF</span><span class="tag">Video</span><span class="tag">Marketing</span></div>
-<div class="price">$39</div>
-<button class="btn order" onclick="openOrder('Digital Marketing','$39')">Order Now</button>
-</div>
+<div class="card"><div class="num">03 • MARKETING</div><h3>Digital Marketing</h3><p>Learn social media, content marketing, SEO, branding, funnels and online growth.</p><div class="tags"><span class="tag">PDF</span><span class="tag">VIDEO</span><span class="tag">MARKETING</span></div><div class="price">$39</div><button class="btn buy" onclick="order('Digital Marketing','$39')">Order Now</button></div>
 
-<div class="card">
-<div class="number">04 • BUSINESS</div>
-<h3>Business & Entrepreneurship</h3>
-<p>Understand business models, strategy, finance, marketing, operations and entrepreneurship fundamentals.</p>
-<div class="tags"><span class="tag">PDF</span><span class="tag">Video</span><span class="tag">Business</span></div>
-<div class="price">$49</div>
-<button class="btn order" onclick="openOrder('Business & Entrepreneurship','$49')">Order Now</button>
-</div>
+<div class="card"><div class="num">04 • BUSINESS</div><h3>Business & Entrepreneurship</h3><p>Understand business models, strategy, finance, marketing, operations and entrepreneurship.</p><div class="tags"><span class="tag">PDF</span><span class="tag">VIDEO</span><span class="tag">BUSINESS</span></div><div class="price">$49</div><button class="btn buy" onclick="order('Business & Entrepreneurship','$49')">Order Now</button></div>
 
-<div class="card">
-<div class="number">05 • FREELANCING</div>
-<h3>Freelancing Blueprint</h3>
-<p>Learn how freelancing works, how to build offers, find clients, communicate professionally and manage projects.</p>
-<div class="tags"><span class="tag">PDF</span><span class="tag">Video</span><span class="tag">Career</span></div>
-<div class="price">$39</div>
-<button class="btn order" onclick="openOrder('Freelancing Blueprint','$39')">Order Now</button>
-</div>
+<div class="card"><div class="num">05 • CAREER</div><h3>Freelancing Blueprint</h3><p>Learn client finding, offers, communication, project management and freelancing fundamentals.</p><div class="tags"><span class="tag">PDF</span><span class="tag">VIDEO</span><span class="tag">CAREER</span></div><div class="price">$39</div><button class="btn buy" onclick="order('Freelancing Blueprint','$39')">Order Now</button></div>
 
-<div class="card">
-<div class="number">06 • CREATIVE</div>
-<h3>Film & Content Creation</h3>
-<p>Explore storytelling, scripting, filming, editing, production planning and digital content creation.</p>
-<div class="tags"><span class="tag">PDF</span><span class="tag">Video</span><span class="tag">Creative</span></div>
-<div class="price">$39</div>
-<button class="btn order" onclick="openOrder('Film & Content Creation','$39')">Order Now</button>
-</div>
+<div class="card"><div class="num">06 • CREATIVE</div><h3>Film & Content Creation</h3><p>Explore storytelling, scripting, filming, editing, production and digital content creation.</p><div class="tags"><span class="tag">PDF</span><span class="tag">VIDEO</span><span class="tag">CREATIVE</span></div><div class="price">$39</div><button class="btn buy" onclick="order('Film & Content Creation','$39')">Order Now</button></div>
 
-<div class="card">
-<div class="number">07 • LEGAL STUDIES</div>
-<h3>Law & Legal Studies</h3>
-<p>Foundation-level introduction to legal systems, contracts, legal reasoning, research and professional ethics.</p>
-<div class="tags"><span class="tag">PDF</span><span class="tag">Video</span><span class="tag">Law</span></div>
-<div class="price">$49</div>
-<button class="btn order" onclick="openOrder('Law & Legal Studies','$49')">Order Now</button>
-</div>
+<div class="card"><div class="num">07 • LEGAL</div><h3>Law & Legal Studies</h3><p>Foundation-level introduction to legal systems, contracts, legal reasoning and research.</p><div class="tags"><span class="tag">PDF</span><span class="tag">VIDEO</span><span class="tag">LAW</span></div><div class="price">$49</div><button class="btn buy" onclick="order('Law & Legal Studies','$49')">Order Now</button></div>
 
-<div class="card">
-<div class="number">08 • DESIGN</div>
-<h3>Architecture & Design</h3>
-<p>Learn architecture fundamentals, design thinking, planning, visual communication and project concepts.</p>
-<div class="tags"><span class="tag">PDF</span><span class="tag">Video</span><span class="tag">Design</span></div>
-<div class="price">$49</div>
-<button class="btn order" onclick="openOrder('Architecture & Design','$49')">Order Now</button>
-</div>
+<div class="card"><div class="num">08 • DESIGN</div><h3>Architecture & Design</h3><p>Learn architecture fundamentals, design thinking, planning and visual communication.</p><div class="tags"><span class="tag">PDF</span><span class="tag">VIDEO</span><span class="tag">DESIGN</span></div><div class="price">$49</div><button class="btn buy" onclick="order('Architecture & Design','$49')">Order Now</button></div>
 
-<div class="card">
-<div class="number">09 • ENGINEERING</div>
-<h3>Engineering Fundamentals</h3>
-<p>Build a broad foundation in engineering mathematics, systems, problem solving, materials and technical thinking.</p>
-<div class="tags"><span class="tag">PDF</span><span class="tag">Video</span><span class="tag">Engineering</span></div>
-<div class="price">$59</div>
-<button class="btn order" onclick="openOrder('Engineering Fundamentals','$59')">Order Now</button>
-</div>
+<div class="card"><div class="num">09 • ENGINEERING</div><h3>Engineering Fundamentals</h3><p>Build foundations in engineering mathematics, systems, materials and technical problem solving.</p><div class="tags"><span class="tag">PDF</span><span class="tag">VIDEO</span><span class="tag">ENGINEERING</span></div><div class="price">$59</div><button class="btn buy" onclick="order('Engineering Fundamentals','$59')">Order Now</button></div>
 
-<div class="card">
-<div class="number">10 • AVIATION</div>
-<h3>Aviation & Airline Studies</h3>
-<p>Introduction to aviation systems, airline operations, safety, airport management and aviation fundamentals.</p>
-<div class="tags"><span class="tag">PDF</span><span class="tag">Video</span><span class="tag">Aviation</span></div>
-<div class="price">$59</div>
-<button class="btn order" onclick="openOrder('Aviation & Airline Studies','$59')">Order Now</button>
-</div>
+<div class="card"><div class="num">10 • AVIATION</div><h3>Aviation & Airline Studies</h3><p>Introduction to aviation systems, airline operations, airport management and safety fundamentals.</p><div class="tags"><span class="tag">PDF</span><span class="tag">VIDEO</span><span class="tag">AVIATION</span></div><div class="price">$59</div><button class="btn buy" onclick="order('Aviation & Airline Studies','$59')">Order Now</button></div>
 
 </div>
 </div>
 </section>
 
 <section id="why">
-<div class="container">
-<div class="section-title">
-<h2>Why MasteryHub?</h2>
-<p>Simple, flexible and accessible learning.</p>
-</div>
-
+<div class="wrap">
+<div class="title"><h2>Why MasteryHub?</h2><p>Everything you need for flexible online learning.</p></div>
 <div class="features">
-<div class="feature">
-<h3>📚 Structured Learning</h3>
-<p>Courses are organized into clear learning paths so you can study step by step.</p>
-</div>
-<div class="feature">
-<h3>🌍 Learn Worldwide</h3>
-<p>Access learning resources online from anywhere in the world.</p>
-</div>
-<div class="feature">
-<h3>💻 Multiple Formats</h3>
-<p>Study with digital PDF material and video-based learning formats.</p>
-</div>
+<div class="box"><h3>📚 Structured</h3><p>Clear learning paths designed for step-by-step study.</p></div>
+<div class="box"><h3>🌍 Worldwide</h3><p>Learn online from anywhere with internet access.</p></div>
+<div class="box"><h3>💻 Flexible</h3><p>Study through digital material and video learning formats.</p></div>
 </div>
 </div>
 </section>
 
 <section id="how">
-<div class="container">
-<div class="section-title">
-<h2>How It Works</h2>
-<p>Getting started is simple.</p>
-</div>
-
+<div class="wrap">
+<div class="title"><h2>How It Works</h2><p>Start your learning journey in three simple steps.</p></div>
 <div class="steps">
-<div class="step">
-<b>1</b>
-<h3>Choose a Course</h3>
-<p>Select the program that matches your learning goal.</p>
+<div class="box"><h3>01 — Choose</h3><p>Select the program that matches your goal.</p></div>
+<div class="box"><h3>02 — Order</h3><p>Click Order Now and submit your course request.</p></div>
+<div class="box"><h3>03 — Receive</h3><p>After payment verification, your purchased material is delivered.</p></div>
 </div>
-
-<div class="step">
-<b>2</b>
-<h3>Place Your Order</h3>
-<p>Click Order Now and send your course request by email.</p>
-</div>
-
-<div class="step">
-<b>3</b>
-<h3>Receive Access</h3>
-<p>After payment verification, your purchased learning material is delivered.</p>
-</div>
-</div>
-
-<p class="notice">
-MasteryHub uses manual order and payment verification. Never send passwords,
-OTP codes, seed phrases or private keys.
-</p>
 </div>
 </section>
 
 <section id="faq">
-<div class="container">
-<div class="section-title">
-<h2>Frequently Asked Questions</h2>
-</div>
-
+<div class="wrap">
+<div class="title"><h2>FAQ</h2></div>
 <div class="faq">
-
-<details>
-<summary>How do I purchase a course?</summary>
-<p>Choose a course, click Order Now and submit your order details. We will provide payment instructions and verify the payment manually.</p>
-</details>
-
-<details>
-<summary>Where are the courses available?</summary>
-<p>MasteryHub is an online learning platform designed for learners worldwide.</p>
-</details>
-
-<details>
-<summary>What learning formats are available?</summary>
-<p>Programs can include digital PDF study material and video learning resources.</p>
-</details>
-
-<details>
-<summary>Are these official university degrees?</summary>
-<p>No. MasteryHub programs are independent educational courses and are not official university degrees, licenses or professional qualifications.</p>
-</details>
-
-<details>
-<summary>Is payment verification manual?</summary>
-<p>Yes. Orders and payments are manually reviewed before course access or delivery.</p>
-</details>
-
+<details><summary>How can I purchase a course?</summary><p>Select a course and click Order Now. Your email app will open with the order details.</p></details>
+<details><summary>Do you accept worldwide learners?</summary><p>Yes. MasteryHub is designed for learners worldwide.</p></details>
+<details><summary>How is payment verified?</summary><p>Orders and payments are reviewed manually before delivery.</p></details>
+<details><summary>Are these official university degrees?</summary><p>No. MasteryHub offers independent educational programs, not official university degrees or professional licenses.</p></details>
+<details><summary>What should I never send for payment?</summary><p>Never send passwords, OTP codes, seed phrases or private keys.</p></details>
 </div>
 </div>
 </section>
 
 <section id="contact">
-<div class="container">
+<div class="wrap">
 <div class="cta">
 <h2>Ready to Start Learning?</h2>
-<p>
-Choose your program today and contact MasteryHub to begin your order.
-</p>
-<a class="btn" href="mailto:shahzadshoukat743@gmail.com?subject=MasteryHub%20Course%20Inquiry">
-Contact MasteryHub
-</a>
+<p>Choose a program and contact MasteryHub to begin your order.</p>
+<a class="btn" href="mailto:shahzadshoukat743@gmail.com?subject=MasteryHub%20Course%20Inquiry">Contact Us</a>
 </div>
 </div>
 </section>
 
-</main>
-
 <footer>
-<div class="container">
-<p>© 2026 MasteryHub. All rights reserved.</p>
+<div class="wrap">
+<p><b>MasteryHub</b> — Learn More. Become More.</p>
+<p>Worldwide Online Learning • © 2026 MasteryHub</p>
 <p>Email: <a href="mailto:shahzadshoukat743@gmail.com">shahzadshoukat743@gmail.com</a></p>
 </div>
 </footer>
 
-<div class="modal" id="orderModal">
-<div class="modal-box">
-<span class="close" onclick="closeOrder()">×</span>
-<h2>Place Your Order</h2>
-<p id="selectedCourse">Course</p>
+<div class="modal" id="modal">
+<div class="modalbox">
+<span class="close" onclick="closeModal()">×</span>
+<h2>Course Order</h2>
+<p id="course"></p>
 
-<form onsubmit="sendOrder(event)">
-<input id="name" required placeholder="Full Name">
-<input id="email" type="email" required placeholder="Your Email">
-<select id="payment" required>
-<option value="">Select Payment Method</option>
+<input id="name" placeholder="Full Name">
+<input id="email" type="email" placeholder="Email Address">
+
+<select id="payment">
 <option>Manual Payment</option>
-<option>Other / Ask for Instructions</option>
+<option>Ask for Payment Instructions</option>
 </select>
-<textarea id="message" placeholder="Message (optional)"></textarea>
 
-<button class="btn order" type="submit">Send Order Request</button>
+<textarea id="msg" placeholder="Message (optional)"></textarea>
 
-<p class="notice">
-Your email app will open with your order details.
-</p>
-</form>
+<button class="btn send" onclick="sendOrder()">Send Order Request</button>
 </div>
 </div>
 
 <script>
-let selectedCourse="";
-let selectedPrice="";
+let chosen="",price="";
 
-function openOrder(course,price){
-selectedCourse=course;
-selectedPrice=price;
-document.getElementById("selectedCourse").innerHTML=
-"<strong>"+course+"</strong> — "+price;
-document.getElementById("orderModal").style.display="flex";
+function order(c,p){
+chosen=c;price=p;
+document.getElementById("course").innerText=c+" — "+p;
+document.getElementById("modal").style.display="flex";
 }
 
-function closeOrder(){
-document.getElementById("orderModal").style.display="none";
+function closeModal(){
+document.getElementById("modal").style.display="none";
 }
 
-function sendOrder(e){
-e.preventDefault();
+function sendOrder(){
+let n=document.getElementById("name").value;
+let e=document.getElementById("email").value;
+let p=document.getElementById("payment").value;
+let m=document.getElementById("msg").value;
 
-let name=document.getElementById("name").value;
-let email=document.getElementById("email").value;
-let payment=document.getElementById("payment").value;
-let message=document.getElementById("message").value;
-
-let subject="MasteryHub Order - "+selectedCourse;
-
-let body=
-"Hello MasteryHub,%0D%0A%0D%0A"+
-"I would like to order the following course:%0D%0A%0D%0A"+
-"Course: "+selectedCourse+"%0D%0A"+
-"Price: "+selectedPrice+"%0D%0A"+
-"Name: "+name+"%0D%0A"+
-"Email: "+email+"%0D%0A"+
-"Payment Method: "+payment+"%0D%0A"+
-"Message: "+message+"%0D%0A%0D%0A"+
-"Thank you.";
-
-window.location.href=
-"mailto:shahzadshoukat743@gmail.com?subject="+
-encodeURIComponent(subject)+"&body="+body;
+if(!n||!e){
+alert("Please enter your name and email.");
+return;
 }
 
-window.onclick=function(e){
-let modal=document.getElementById("orderModal");
-if(e.target===modal) closeOrder();
+let subject="MasteryHub Order - "+chosen;
+let body="Hello MasteryHub,\n\nCourse: "+chosen+
+"\nPrice: "+price+
+"\nName: "+n+
+"\nEmail: "+e+
+"\nPayment: "+p+
+"\nMessage: "+m+
+"\n\nThank you.";
+
+location.href="mailto:shahzadshoukat743@gmail.com?subject="+
+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+}
+
+document.getElementById("search").oninput=function(){
+let q=this.value.toLowerCase();
+document.querySelectorAll(".card").forEach(function(c){
+c.style.display=c.innerText.toLowerCase().includes(q)?"block":"none";
+});
 };
-
-document.getElementById("search").addEventListener("input",function(){
-let value=this.value.toLowerCase();
-let cards=document.querySelectorAll(".card");
-
-cards.forEach(function(card){
-card.style.display=
-card.innerText.toLowerCase().includes(value) ? "block" : "none";
-});
-});
 </script>
 
 </body>
